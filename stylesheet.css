@@ -1,0 +1,326 @@
+/*Whole page*/
+html{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #050a24;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.forepage{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    align-content: center;
+}
+header{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #020511;
+    border-radius: 1px solid white;
+}
+.menu-button{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
+}
+footer{
+    grid-area: ("footer");
+    height: 150px;
+    background-color: rgb(63, 63, 63);
+    margin-left: 0;
+    margin-right: 0;
+}
+/*Hero images stuff*/
+
+    #hero-text{
+        text-shadow: 3px 3px black;
+        font-size: 2.1em;
+    }
+    #heroimage{
+    grid-area: ("heroimage");
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/blues_performance.jpg");
+    height: 700px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    #buytickets{
+        grid-area: ("buytickets");
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/ticket-booth.jpg");
+        height: 600px;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #bookevents{
+        grid-area: ("bookevents");
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/pexels-harimadhav-s-15583331.jpg");
+        height: 600px;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #bookevents2{
+        grid-area:("bookevents2");
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/Musicians.jpg");
+        height: 600px;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+#aboutpic{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/Musicians.jpg");
+    height: 700px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/*Hero Header stuff*/
+.hero_header{
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    position: relative;
+    top: 50%;
+    padding:25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.hero_button{
+    font-size: 1.2em;
+    background-color: orangered;
+    color:white;
+    border: none;
+    width: 180px;
+}
+
+    /*navbar*/
+    nav{
+        display: none;
+        overflow: hidden;
+        z-index: 1;
+        transition: 1s;
+        flex-direction: row;
+        width: 100%;
+    }
+    #navbar{
+        grid-area: ("navbar");
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        border-radius: 1px solid white;
+
+    }
+    button{
+        height: 80px;
+        width: 160px;
+    }
+    .navbutton{
+        border: 1px solid white;
+        background-color: #050a24;
+        color: white;
+        width:100%;
+
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: none;
+    }
+    .navbutton:active{
+        transition: 0.5s;
+        background-color: orangered;
+        color: #050a24;
+    }
+/*information box + picture*/
+.infobox{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/club-exterior.jpg");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.info{
+    background-color: rgba(3, 4, 9, 0.6);
+    color: white;
+    font-size: 1.1em;;
+    padding: 25px;
+
+    position:relative;
+    top: 25%;
+    }
+
+.event{
+
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-bottom: 50px;
+}
+.description{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+}
+.event-buy{
+    background-color: orangered;
+    width: 160px;
+}
+/*Contact page grid*/
+#C-info{
+    grid-area: Contact;
+}
+#map{
+    grid-area: Location;
+    align-content: center;
+}
+#hero-head{
+    grid-area: Header;
+}
+#C-forepage{
+    margin: 25px;
+    color: white;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "Header"
+    "Contact"
+    "Location";
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    /*Hero images stuff*/
+
+    #heroimage{
+        grid-area: ("heroimage");
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/blues_performance.jpg");
+        height: 500px;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
+        #buytickets{
+            grid-area: ("buytickets");
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/ticket-booth.jpg");
+            height: 500px;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        #bookevents{
+            grid-area: ("bookevents");
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/muddy.jpg");
+            height: 500px;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        #bookevents2{
+            grid-area:("bookevents2");
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/Musicians.jpg");
+            height: 500px;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    #aboutpic{
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Pictures/Musicians.jpg");
+        height: 500px;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    /*navbar*/
+    nav{
+        display: flex;
+        overflow: hidden;
+        z-index: 1;
+        transition: 1s;
+        flex-direction: row;
+        width: 100%;
+    }
+    #navbar{
+        grid-area: ("navbar");
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        border-radius: 1px solid white;
+
+    }
+    button{
+        height: 80px;
+        width: 160px;
+    }
+    .navbutton{
+        border: none;
+        background-color: #050a24;
+        color: white;
+        width:100%;
+        font-size: 1.2em;
+        border-radius: 1px solid #050a24;
+    }
+    .navbutton:hover{
+        transition: 0.3s;
+        background-color: orangered;
+        color: #050a24;
+        border-radius: 1px solid #050a24;
+    }
+    .menu-button{
+        display: none;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    
+    }
+    #C-forepage{
+        margin: 25px;
+        color: white;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "Header Header",
+        "Contact Location";
+    }
+}

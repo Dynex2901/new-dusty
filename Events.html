@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"><!-- comment -->
+        <title>Our Events</title>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu-button").click(function(){
+                    $("nav").toggle();
+                });
+            });
+        </script>
+        <style>
+        </style>
+    </head>
+    <body id="calender">
+        <header id="header">
+            <button type="button" class="menu-button"></button>
+
+            <nav>
+                <div id='navbar'>
+                    <button class="navbutton"  onclick="window.location.href='index.html';">Home</button>
+                    <button class="navbutton"  onclick="window.location.href='about.html';">About</button>
+                    <button class="navbutton"  onclick="window.location.href='Events.html';">Events</button>
+                    <button class="navbutton"  onclick="window.location.href='contact.html';">Contact</button>
+                </div>
+            </nav>
+        </header>
+        <div class="forepage">
+            <h1 id="title">Upcoming Events:</h1>
+            <div class="event">
+                <img src="Pictures/Jungal-Fever.jpg" alt="Jungal-fever">
+                <h2>Jungal Fever</h2>
+                <div class="description">
+                    <p>
+                        A local psychedelic band known for their
+                        "Wall of sound" approach to there
+                        live performance. Their music is bound to
+                        shake the Venue and heighten your pulse.
+                    </p>
+                </div>
+                <div>
+                    <button class="event-buy">Buy Tickets!</button>
+                </div>
+
+            </div>
+            <div class="event">
+                <img src="Pictures/LadyBo-RhythmBrothers.jpg" alt="Jungal-fever">
+                <h2>Jungal Fever</h2>
+                <div class="description">
+                    <p>
+                        A local psychedelic band known for their
+                        "Wall of sound" approach to there
+                        live performance. Their music is bound to
+                        shake the Venue and heighten your pulse.
+                    </p>
+                </div>
+                <div>
+                    <button class="event-buy">Buy Tickets!</button>
+                </div>
+            </div>
+            <div class="event">
+                <img src="Pictures/The-Sharones.jpg" alt="Jungal-fever">
+                <h2>Jungal Fever</h2>
+                <div class="description">
+                    <p>
+                        A local psychedelic band known for their
+                        "Wall of sound" approach to there
+                        live performance. Their music is bound to
+                        shake the Venue and heighten your pulse.
+                    </p>
+                </div>
+                <div>
+                    <button class="event-buy">Buy Tickets!</button>
+                </div>
+            </div>
+            <div class="event">
+                <img src="Pictures/Jungal-Fever.jpg" alt="Jungal-fever">
+                <h2>Jungal Fever</h2>
+                <div class="description">
+                    <p>
+                        A local psychedelic band known for their
+                        "Wall of sound" approach to there
+                        live performance. Their music is bound to
+                        shake the Venue and heighten your pulse.
+                    </p>
+                </div>
+                <div>
+                    <button class="event-buy">Buy Tickets!</button>
+                </div>
+            </div>
+
+        </div>
+        <footer id="footer">
+            <p>This is a practice site not meant for commercial use &copy2023</p>
+        </footer>
+    </body>
+</html>

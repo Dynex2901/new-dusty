@@ -1,0 +1,92 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dusty Brooms</title>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu-button").click(function(){
+                    $("nav").toggle();
+                });
+                $("#tickets").hover(function(){
+                    $("#buytickets").hide();
+                });
+            });
+        </script>
+    </head>
+    
+    <body id='homepage'>
+        <header id="header">
+            <button type="button" class="menu-button"></button>
+
+            <nav>
+                <div id='navbar'>
+                    <button class="navbutton"  onclick="window.location.href='index.html';">Home</button>
+                    <button class="navbutton"  onclick="window.location.href='about.html';">About</button>
+                    <button class="navbutton"  onclick="window.location.href='Events.html';">Events</button>
+                    <button class="navbutton"  onclick="window.location.href='contact.html';">Contact</button>
+                </div>
+            </nav>
+        </header>
+        
+            <div id="heroimage">
+                <div class="hero_header">
+                    <h1 id="hero-text">Welcome to the Dusty Broom!</h1>
+                    <button class="hero_button" id="call">Buy Tickets Now!</button>
+                </div>
+            </div>
+            <div class="forepage">
+                <div class="infobox">
+                    <div class="info">
+                        <h2>Who are we:</h2>
+                        <p>
+                            The Dusty broom is one of the longest running blues clubs in Florida. 
+                            Our story began in 1952, when the well known record producer Robert Conley moved to Florida to open a music club. 
+                            Since then we have hosted hundreds of acts from all across the US from Blues to Rock to Jazz.
+                            We have hosted many acts such as Muddy Waters, Robert Cray, B.B King and many more.
+                            Our mission is to bring an excitement to our patron beyond other live venues.
+                        </p>
+                        <a href="about.html">Learn More.</a>
+                    
+                    </div>
+                </div>
+                <div id="buytickets" class="section" style="margin-bottom: 25px;">
+                    <div class="hero_header">
+                        <h2>Order Tickets Ahead:</h2>
+                        <p>
+                            Go ahead and Order the tickets for your favorite music now before tickets are sold out!
+                        
+                        </p>
+                        <button id="tickets" class="hero_button">Order Now!</button> 
+                    </div>
+                </div>
+                <div id="bookevents" class="section" style="margin-bottom: 25px;">
+                    <div class="hero_header">
+                        <h2>Jam Out:</h2>
+                        <p>
+                            Come to one of our famous jam sessions where you can collaborate with many other talented musicians.
+                        </p>
+                        <button class="hero_button">Learn more!</button>
+                    </div>
+                </div>
+                <div id="bookevents2" class="section">
+                    <div class="hero_header">
+                        <h2>Book an Event:</h2>
+                        <p>
+                            Are you a local group wanting a venue to perform to your fans? We are happy to accommodate you! 
+                        </p>
+                        <button class="hero_button">Book Now!</button>
+                    </div>
+                </div>
+            </div>
+        <footer id="footer">
+            <p>This is a practice site not meant for commercial use &copy2023</p>
+        </footer>
+    
+    </body>
+</html>

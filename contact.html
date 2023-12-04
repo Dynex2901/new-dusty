@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu-button").click(function(){
+                    $("nav").toggle();
+                });
+            });
+
+        </script>
+        <style>
+            h2{
+                background-color: black;
+                width: 100%;  
+            }
+            iframe{
+                width: 100%;
+                margin-top: 25px;
+                padding: 10px;
+                background-color: #0d1853;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header id="header">
+            <button type="button" class="menu-button"></button>
+
+            <nav>
+                <div id='navbar'>
+                    <button class="navbutton"  onclick="window.location.href='index.html';">Home</button>
+                    <button class="navbutton"  onclick="window.location.href='about.html';">About</button>
+                    <button class="navbutton"  onclick="window.location.href='Events.html';">Events</button>
+                    <button class="navbutton"  onclick="window.location.href='contact.html';">Contact</button>
+                </div>
+            </nav>
+        </header>
+        
+        <main id="C-forepage">
+            <div id="hero-head">
+                <h1>Contact Us:</h1>
+            </div>
+            <div id="C-info">
+                <div>
+                    <h2>Phone:</h2>
+                    <p><span class="telephone">(863)-522-6323</span></p>
+                </div>
+                <div>
+                    <h2>Email:</h2>
+                    <p><span class="email">dustybroom@gmail.com</span></p>
+                </div>
+            </div>
+            <div id="map">
+                <h2>Where are we?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.1506254495725!2d-81.8895246!3d27.989287699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd3e474755435d%3A0xaa8c592a4b3d039e!2sPolk%20State%20College%20Library!5e0!3m2!1sen!2sus!4v1700056121792!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+        <footer id="footer">
+            <p>This is a practice site not meant for commercial use &copy2023</p>
+        </footer>
+    </body>
+</html>
